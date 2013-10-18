@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoomquilt</title>
+	<meta name="keywords" content="zoomquilt, infinite zoom, painting, artwork">
+	<meta name="description" content="The infinitely zooming image">
+	<link rel="stylesheet" type="text/css" media="all" href="css/zoom.css" />
+</head>
+<body>
+	<div id='status'>
+		<div id='loadbar'></div>
+	</div>
+	<canvas id="zc" width="0" height="0">Your need a Browser with Canvas support to view the Zoomquilt </canvas>
+	<div id="info" class="closed">
+		<div id="inner-content-div">
+			<h1>Raghava KK's infinite artwork</h1>
+			<span class="orange"> Use the up and down arrow keys to navigate. </span>
+			<br>
+			<br>
+			<h2> HAPPY RETURNS </h2>
+			<p> Thanks to <span class="bluetext"><a href="http://www.nikolaus-baumgarten.de" target="_blank">Nikolaus Baumgarten</a> </span></p>
+		</div>
+	</div>
+	<div id="infotoggle">&raquo;</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/zm.js" type="text/javascript"></script>
+	<script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script>
+		$("#infotoggle").mousedown(function(){
+			if ($("#info").hasClass('closed')) {
+				$("#infotoggle").html('');
+				$('#infotoggle').animate({'left':'285px','opacity':1}, 400);
+
+				$('#info').animate({'left':'0px','opacity':1}, 400, function() {
+					$("#info").removeClass('closed');
+					$("#info").addClass('opened');
+					$("#infotoggle").html('&laquo;');
+  				});
+			} else if ($("#info").hasClass('opened')) {
+				$("#infotoggle").html('');
+				$('#infotoggle').animate({'left':'8px','opacity':0.4}, 400);
+
+				$('#info').animate({'left':'-277px','opacity':0.0}, 400, function() {
+					$("#info").removeClass('opened');
+					$("#info").addClass('closed');
+					$("#infotoggle").html('&raquo;');
+  				});
+  			}
+		});	
+		$(function(){
+		$('#inner-content-div').slimScroll({
+			height: '100%',
+			color: '#aaa',
+			alwaysVisible: true
+			});
+		});
+	</script>
+</body>
+</html>

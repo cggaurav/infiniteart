@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font: 400 11px/1.6 "Open Sans", Helvetica, Arial, sans-serif;
+  color: #333; }
+
+#zc {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  z-index: 5;
+  opacity: 0; }
+
+#status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 18px;
+  margin-top: -10px;
+  margin-left: -100px;
+  z-index: 100;
+  text-align: right;
+  opacity: 0;
+  border: 2px solid #aaaaaa;
+  border-radius: 3px;
+  overflow: hidden; }
+
+#loadbar {
+  position: relative;
+  height: 18px;
+  width: 0%;
+  background: #aaa; }
+
+#info {
+  position: fixed;
+  left: -277px;
+  opacity: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 8px 15px 8px 0;
+  top: 0px;
+  bottom: 0px;
+  width: 285px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-right: 1px solid #aaaaaa;
+  z-index: 20; }
+
+#infotoggle {
+  position: absolute;
+  left: 8px;
+  top: 18px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+  border-radius: 20px;
+  background: #ff561e;
+  z-index: 100;
+  text-align: center;
+  font: 700 23px Helvetica, Arial, sans-serif;
+  color: #fff;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer; }
+
+#infotoggle:hover {
+  background: #ff8c66; }
+
+.androidmsg {
+  position: relative;
+  margin: 5px auto;
+  padding: 5px 3px 5px 15px;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 19;
+  font: 400 12pt/1.6 "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 10px;
+  display: none; }
+
+.androidmsg img {
+  float: right;
+  margin-top: -5px; }
+
+#inner-content-div {
+  margin: 5px 0;
+  padding: 0 10px 0 25px; }
+
+h1 {
+  color: #ff5219;
+  font: 700 25pt "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 0 -4px 9px;
+  padding: 0;
+  text-shadow: -1px 1px #ffc5b2; }
+
+h2 {
+  color: #ff5219;
+  font: 700 16pt "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 9px 0 0;
+  padding: 0;
+  text-shadow: -1px 1px #ffc5b2; }
+
+#info img {
+  margin-left: -10px; }
+
+b, .orange {
+  color: #ff5219; }
+
+.bluetext, a, a:hover, a:active {
+  color: #21759b; }
+
+a, a:hover, a:active {
+  text-decoration: none; }
