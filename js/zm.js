@@ -55,6 +55,9 @@ var zoom = function() {
 	function A() {
 		steps = [];
 		steps.push(new C("http://raghavakk.com/images/artwork/collaborations1_l.jpg"));
+		steps.push(new C("http://blogs-images.forbes.com/bruceupbin/files/2011/07/pop-it-bath-page.png"));
+		steps.push(new C("http://www.thehindu.com/multimedia/dynamic/01174/12SMART_jpg_1174122f.jpg"));
+		steps.push(new C("https://lh5.googleusercontent.com/-1Z7iZuROMRA/TninMeBP1gI/AAAAAAAAEYk/XStP-7uaorQ/s640/RAGHAVA%252520K%252520K%252520-%252520%252520DIRTY%252520%252520TRICK%252520%252520-%252520%252520WATERCOLOUR%252520ON%252520PAPER%252520%252520-%2525202010.jpg"))
 		// for (var a = 0; 46 > a; a++) steps.push(new C(r[Math.floor(Math.random() * r.length)]));
 		// for (var a = 0; 46 > a; a++) steps.push(new C("http://imgur.com/" + D[(20 + a) % 46] + ".jpg"))
 		// for (var a = 0; 46 > a; a++) steps.push(new C("http://raghavakk.com/popimage.html?fromthesketchbook1_l.jpg"));
