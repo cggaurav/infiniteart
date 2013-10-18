@@ -54,6 +54,9 @@ var zoom = function() {
 
 	function A() {
 		steps = [];
+		for (var a = 0; 46 > a; a++) {
+				console.log("http://imgur.com/" + D[(20 + a) % 46] + ".jpg");
+		}
 		steps.push(new C("http://raghavakk.com/images/artwork/collaborations1_l.jpg"));
 		steps.push(new C("http://blogs-images.forbes.com/bruceupbin/files/2011/07/pop-it-bath-page.png"));
 		steps.push(new C("http://www.thehindu.com/multimedia/dynamic/01174/12SMART_jpg_1174122f.jpg"));
